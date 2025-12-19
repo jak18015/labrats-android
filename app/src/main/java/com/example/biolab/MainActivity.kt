@@ -31,16 +31,3 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// --- Navigation Logic ---
-
-@RequiresApi(Build.VERSION_CODES.O)
-@Composable
-fun LabAppNavigation() {
-    val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "home") {
-        composable("home") { HomeScreen(navController) }
-        composable("hemocytometer") { HemocytometerScreen { navController.popBackStack() } }
-        composable("dilution") { DilutionScreen { navController.popBackStack() } }
-        composable("antibody") { AntibodyScreen { navController.popBackStack() } }
-    }
-}

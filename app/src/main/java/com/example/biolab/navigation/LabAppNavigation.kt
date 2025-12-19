@@ -1,4 +1,4 @@
-package com.example.biolab
+package com.example.biolab.navigation
 
 import android.os.Build
 import androidx.annotation.RequiresApi

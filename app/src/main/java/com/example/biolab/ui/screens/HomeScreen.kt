@@ -63,7 +63,7 @@ fun HomeScreen(navController: NavHostController) {
                 Color(0xFF262626),
                 Color(0xFF7C3AED)
             ) {
-                navController.navigate("dilution")
+                navController.navigate("antibody")
             }
         }
     }
